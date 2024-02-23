@@ -1,0 +1,218 @@
+body{
+    background: url("/login/static/img/Backgroud.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.navbar-custom {
+    background-color: #ED301C;
+}
+
+.gradiente {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(241, 77, 12) 0%, rgba(243, 102, 8, 0.999) 35%, rgb(213, 169, 26) 100%);
+      color: white;
+      padding: 30px;
+  }
+  
+  .nombre:hover{
+      color: blanchedalmond;
+      transition: ease 1s;
+      cursor: pointer;
+  }
+  
+  .titles:hover{
+      color: purple;
+      transition: ease 1s;
+  }
+
+  .textop{
+    color: white;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+  }
+
+.main-section{
+    margin:0 auto;
+    margin-top:25%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #F7511E;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    width: 100xp;
+    height: 100px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}
+
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top:4px;
+}
+
+.form-group#user-group::before{
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f023";
+}
+
+button{
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot{
+    padding: 5px 0;
+}
+
+.forgot a{
+    color: white;
+}
+
+.custom-bg-color {
+    background-color: #f0491296;
+}
+
+
+
+/*Principal*/
+.container {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.custom-image {
+
+width: 100%;
+height: auto;
+flex-shrink: 0;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.menu-category{
+    padding-top: 20px;
+}
+
+.custom-title {
+    background-color: #ca6d02;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px; /* Espacio entre los títulos */
+}
+
+.custom-title:hover {
+    background-color: #e4f00a;
+}
+
+.sabores-lista li {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sabores-lista li p {
+    font-size: 18px;
+    color: #110101;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.precios-pizza {
+    list-style-type: none;
+    padding: 0;
+}
+
+.precios-pizza li {
+    font-size: 18px;
+    color: #110101;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+.carrito-btn {
+    margin-left: 10px; 
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #da1414;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.carrito-btn:hover {
+    background-color: #980707;
+    color: aliceblue;
+    text-decoration: none; /* Elimina el subrayado */
+
+}
+
+iframe[src*="google.com/maps"] {
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: linear-gradient(to right, #100f0f, #332a0d); 
+    padding: 20px;
+    color: white; 
+}
+
+/*Carrito de compras*/
+
+.custom-color {
+    color: #70378d; 
+}
+
+.btn-primary {
+    background-color: #6b0dee; 
+    border-color: #70378d; 
+    
+}
+
+#sumarTotal {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10%;
+}

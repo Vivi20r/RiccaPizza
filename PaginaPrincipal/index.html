@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Principal</title>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la página -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" type="text/css" href="../login/static/css/index.css" th:href="@{/css/index.css}">
+    <script src="//code.tidio.co/vmvadrcesx92zba4vvnswbn6eu9uhrf5.js" async></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-orange fixed-top navbar-custom">
+        <a class="navbar-brand" href="#">Rica-Pizza</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="bi bi-house"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cerrar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal con imagen -->
+    <div class="container">
+        <div class="image-container">
+            <img src="../PaginaPrincipal/img/principal.png" alt="Pizza" class="custom-image">
+        </div>
+    </div>
+
+    <!-- Sección de Menú -->
+    <div class="menu-section" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <div class="menu-category text-center">
+                        <h2>Nuestro Menú</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid menu-section">
+                <div class="row" id="menu">
+                    <!-- Pizzas -->
+                    <div class="col-md-3 menu-category text-center mb-4">
+                        <h2 class="custom-title" id="pizzas">Pizzas</h2>
+                        <img src="/PaginaPrincipal/img/pizza-menu.jpg" alt="Pizza"  class="img-fluid rounded">
+                        <div class="menu-item" id="pizzas-menu">
+                            <div class="sabores-lista">
+                                <li>
+                                    <h3>Hawaianna</h3>
+                                    <p>Sabores: Piña, Jamón, Salsa de Tomate, Queso</p>
+                                </li>
+                                <li>
+                                    <h3>Mexicana</h3>
+                                    <p>Sabores: Chorizo, Jalapeños, Salsa de Tomate, Queso</p>
+                                </li>
+                                <li>
+                                    <h3>Carnes</h3>
+                                    <p>Sabores: Tocineta, Salchichas, Salsa de Tomate, Queso</p>
+                                </li>
+                                <li>
+                                    <h3>Champiñones</h3>
+                                    <p>Sabores: Champiñones, Salsa de Tomate, Queso</p>
+                                </li>                              
+                            </div>
+                            <h4 class="Precios">Precios:</h4>
+                            <ul class="precios-pizza">
+                                <li>Porción: $5.500</li>
+                                <li>Personal: $7.000</li>
+                                <li>Mediana: $24.000</li>
+                                <li>Familiar: $42.000</li>
+                            </ul>  
+                        </div>
+                    </div>
+            
+                    <!-- Hamburguesas -->
+                    <div class="col-md-3 menu-category text-center mb-4">
+                        <h2 class="custom-title" style="font-size: 29px;" id="hamburguesas">Hamburguesas</h2>
+                        <img src="/PaginaPrincipal/img/hamburguesa-menu.jpg" class="img-fluid rounded">
+                        <div class="menu-item" id="hamburguesas-menu">
+                            <div class="sabores-lista">
+                                <li>
+                                    <h3>Carne sencilla</h3>
+                                    <p>Ingredientes: Carne, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $8.500</p>
+                                </li>
+                                <li>
+                                    <h3>Pollo sencilla</h3>
+                                    <p>Ingredientes: Pollo, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $9.000</p>
+                                </li>
+                                <li>
+                                    <h3>Carne especial</h3>
+                                    <p>Ingredientes: Doble carne, Bacon, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $9.500</p>
+                                </li>
+                                <li>
+                                    <h3>Pollo especial</h3>
+                                    <p>Ingredientes: Doble pollo, Bacon, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $10.000</p>
+                                </li>
+                                <li>
+                                    <h3>Doble carne</h3>
+                                    <p>Ingredientes: Doble carne, Bacon, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $12.000</p>
+                                </li>
+                                <li>
+                                    <h3>Doble pollo</h3>
+                                    <p>Ingredientes: Doble pollo, Bacon, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $13.500</p>
+                                </li>
+                                <li>
+                                    <h3>Mixta especial</h3>
+                                    <p>Ingredientes: Carne, Pollo, Bacon, Lechuga, Tomate, Queso</p>
+                                    <p>Precio: $13.000</p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Perros -->
+                    <div class="col-md-3 menu-category text-center mb-4">
+                        <h2 class="custom-title" id="perros">Perros</h2>
+                        <img src="/PaginaPrincipal/img/hotdog-menu.jpg" class="img-fluid rounded">
+                        <div class="menu-item" id="perros-menu">
+                            <div class="sabores-lista">
+                                <li>
+                                    <h3>Sencillo</h3>
+                                    <p>Precio: $6.500</p>
+                                    <p>Ingredientes: Salchicha, Pan, Chips</p>
+                                </li>
+                                <li>
+                                    <h3>Americano</h3>
+                                    <p>Precio: $7.500</p>
+                                    <p>Ingredientes: Salchicha, Pan, Queso, Salsa de Tomate, Mayonesa, Mostaza, Chips</p>
+                                </li>
+                                <li>
+                                    <h3>Choriperro</h3>
+                                    <p>Precio: $7.500</p>
+                                    <p>Ingredientes: Salchicha tipo chorizo, Pan, Queso, Salsa de Tomate, Mayonesa, Chips</p>
+                                </li>
+                                <li>
+                                    <h3>Especial</h3>
+                                    <p>Precio: $8.500</p>
+                                    <p>Ingredientes: Salchicha, Pan, Queso, Tocineta, Salsa de Tomate, Mayonesa, Chips, Huevo de codorniz</p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- otros -->
+                    <div class="col-md-3 menu-category text-center mb-4">
+                        <h2 class="custom-title" id="otros">Otros</h2>
+                        <img src="/PaginaPrincipal/img/otros-menu.jpg" class="img-fluid rounded">
+                        <div class="menu-item" id="otros-menu">
+                            <div class="sabores-lista">
+                                <li>
+                                    <h3>Lasagna</h3>
+                                    <p>Precio: $9.000</p>
+                                    <p>Ingredientes: Pasta, Carne, Queso, Salsa Bechamel</p>
+                                </li>
+                                <li>
+                                    <h3>Chorizos</h3>
+                                    <p>Precio: $4.500</p>
+                                    <p>Ingredientes: Chorizos asados</p>
+                                </li>
+                                <li>
+                                    <h3>Pasteles</h3>
+                                    <p>Precio: $2.000</p>
+                                    <p>Ingredientes: Masa, Relleno</p>
+                                </li>
+                                <li>
+                                    <h3>Panzerotti</h3>
+                                    <p>Precio: $7.500</p>
+                                    <p>Ingredientes: Masa, Queso, Salsa de Tomate</p>
+                                </li>
+                                <li>
+                                    <h3>Mazorca gratinada</h3>
+                                    <p>Precio: $9.000</p>
+                                    <p>Ingredientes: Mazorca, Queso, Salsa Bechamel</p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-shopping-cart fa-3x mr-2" id="cart-icon"></i>
+                    <span class="badge badge-pill badge-danger cart-count-lg" id="cart-count">0</span>
+                </div>
+                <div class="cart-container" href="index.html"> 
+                </div>
+                <a href="/carroDeCompras/index.html" class="carrito-btn" target="_blank">Carrito de Compras</a>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito de compras -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.967988198049!2d-74.18838720321045!3d4.599756900000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e455bb14983%3A0x43caf3a57d73b0d9!2sSupermercados%20El%20L%C3%ADder!5e0!3m2!1ses!2sco!4v1701302547397!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <p>Dirección: Bogotá bosa la Estación</p>
+                    <p>Email: rica-pizza@gmail.com</p>
+                    <p>Teléfono: 3107458826</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Síguenos en Redes Sociales</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            // Ocultar todos los elementos de menú al principio
+            $('.menu-item').hide();
+    
+            // Función para alternar la visibilidad de los productos de cada categoría
+            function toggleMenuItems(menuId) {
+                // Ocultar todos los elementos de menú
+                $('.menu-item').hide();
+                // Mostrar los productos de la categoría correspondiente al ID proporcionado
+                $('#' + menuId).show();
+            }
+    
+            // Eventos de clic para alternar la visibilidad de los productos de cada categoría
+            $('#pizzas').click(function () {
+                toggleMenuItems('pizzas-menu');
+            });
+    
+            $('#hamburguesas').click(function () {
+                toggleMenuItems('hamburguesas-menu');
+            });
+    
+            $('#perros').click(function () {
+                toggleMenuItems('perros-menu');
+            });
+    
+            $('#otros').click(function () {
+                toggleMenuItems('otros-menu');
+            });
+                // Manejar clic en el icono del carrito
+                $('#cart-icon').click(function () {
+            // Obtener la cantidad actual en el carrito
+            var cartCount = parseInt($('#cart-count').text());
+
+            // Verificar si hay productos en el carrito
+            if (cartCount > 0) {
+                // Crear la barra de selección
+                var selectionBar = $('<div class="selection-bar"></div>');
+                selectionBar.text('Seleccionar');
+
+                // Clonar los elementos del carrito y agregarlos a la barra de selección
+                var cartItems = $('.cart-item').clone();
+                selectionBar.append(cartItems);
+
+                // Limpiar el contenido actual del contenedor del carrito
+                $('.cart-container').empty();
+
+                // Mostrar la barra de selección en el contenedor del carrito
+                $('.cart-container').append(selectionBar);
+            } else {
+                // Si no hay productos en el carrito, mostrar el mensaje "El carrito está vacío"
+                alert('El carrito está vacío');
+            }
+        });
+        });
+    </script>
+</body>
+</html>
+
+

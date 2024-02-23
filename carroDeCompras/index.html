@@ -1,0 +1,273 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <title>Carro de compras</title>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- FRAMEWORK BOOTSTRAP para el estilo de la página -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Los iconos tipo Solid de Fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Nuestro CSS -->
+        <link rel="stylesheet" type="text/css" href="../login/static/css/index.css" th:href="@{/css/index.css}">
+        <script src="//code.tidio.co/vmvadrcesx92zba4vvnswbn6eu9uhrf5.js" async></script>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-orange fixed-top navbar-custom">
+            <a class="navbar-brand" href="#">Rica-Pizza</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="bi bi-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!-- Contenido del carro de compras -->
+    <div class="menu-section" id="menu">
+        <div class="container">
+            <!-- Contenido del menú con cuadros de selección -->
+            <!-- Pizza Hawaiana -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Pizza Hawaiana</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="5500">Porción</option>
+                        <option value="7000">Personal</option>
+                        <option value="24000">Mediana</option>
+                        <option value="42000">Familiar</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="0">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+            <!-- Pizza Mexicana -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Pizza Mexicana</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="5500">Porción</option>
+                        <option value="7000">Personal</option>
+                        <option value="24000">Mediana</option>
+                        <option value="42000">Familiar</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="0">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+            <!-- Pizza de Carnes -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Pizza de Carnes</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="5500">Porción</option>
+                        <option value="7000">Personal</option>
+                        <option value="24000">Mediana</option>
+                        <option value="42000">Familiar</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="0">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+            <!-- Pizza de Champiñones -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Pizza de Champiñones</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="5500">Porción</option>
+                        <option value="7000">Personal</option>
+                        <option value="24000">Mediana</option>
+                        <option value="42000">Familiar</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="0">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+            <!-- Hamburguesa Carne -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Hamburguesa Carne</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="8500">Sencilla</option>
+                        <option value="12000">Doble</option>
+                        <option value="9000">Especial</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="0">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">0</span>
+                </div>
+            </div>
+            <!-- Hamburguesa Pollo -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Hamburguesa Pollo</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="9000">Sencilla</option>
+                        <option value="13500">Doble</option>
+                        <option value="10000">Especial</option>
+                        <option value="15000">Mixta Especial</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="-1">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+             <!-- Hot Dogs -->
+             <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Perros</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="6500">Sencillo</option>
+                        <option value="7500">Americano</option>
+                        <option value="7500">Choriperro</option>
+                        <option value="8500">Especial</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="-1">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+
+            <!-- Otros -->
+            <div class="cart-item row mb-3">
+                <div class="col-md-4">
+                    <span class="product-name">Otros</span>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control portion-select">
+                        <option value="9000">Lasagna</option>
+                        <option value="4500">Chorizo</option>
+                        <option value="2000">Pastel</option>
+                        <option value="7500">Panzerotti</option>
+                        <option value="9000">Mazorca gratinada</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control quantity-input" value="0" min="-1">
+                </div>
+                <div class="col-md-3">
+                    <span class="total-price">$0</span>
+                </div>
+            </div>
+<!-- Botón para sumar el precio total general -->
+<button id="sumarTotal" onclick="sumarPrecioTotal()" style="border-radius: 15px; padding: 5px 10px; max-width: 150px;" class="btn btn-primary btn-lg mt-3">Total</button>
+<!-- Total general -->
+<div id="total-general-container" class="mt-4">
+    <h4 class="custom-color"> <span id="total-general" class="font-weight-bold">$0.00</span></h4>
+</div>
+
+    <script>
+        $(document).ready(function () {
+            // Manejar cambios en la selección de porción y en la cantidad
+            $('.portion-select, .quantity-input').on('change input', function () {
+                updateTotalPrice($(this));
+            });
+
+            // Función para actualizar el precio total según la selección de porción y cantidad
+            function updateTotalPrice(element) {
+                var cartItem = element.closest('.cart-item');
+                var selectedOption = cartItem.find('.portion-select :selected');
+                var pricePerUnit = parseFloat(selectedOption.val());
+                var quantityInput = cartItem.find('.quantity-input');
+                var quantity = parseInt(quantityInput.val());
+
+                // Verificar si pricePerUnit es un número válido
+                if (isNaN(pricePerUnit) || pricePerUnit <= 0) {
+                    console.error('Error: El precio por unidad no es un número válido.');
+                    return;
+                }
+
+                // Si quantity no es un número válido, establecer en 0
+                if (isNaN(quantity)) {
+                    console.warn('Advertencia: La cantidad no es un número válido. Se establecerá en 0.');
+                    quantity = 0;
+                    quantityInput.val(quantity);
+                }
+
+                var totalPrice = quantity * pricePerUnit;
+
+                // Actualizar el precio total en la interfaz
+                cartItem.find('.total-price').text('$' + totalPrice.toFixed(2));
+
+                // Actualizar el precio total general
+                updateCartTotal();
+            }
+
+            // Función para sumar el precio total general
+            window.sumarPrecioTotal = function () {
+                var totalGeneral = 0;
+
+                // Recorre cada elemento del carrito y suma los precios totales
+                $('.cart-item').each(function () {
+                    var totalProducto = parseFloat($(this).find('.total-price').text().replace('$', ''));
+                    totalGeneral += isNaN(totalProducto) ? 0 : totalProducto;
+                });
+
+                // Actualiza el precio total general en el elemento correspondiente
+                $('#total-general').text('$' + totalGeneral.toFixed(2));
+            };
+        });
+    </script>
+
+</body>
+
+</html>
